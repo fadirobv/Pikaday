@@ -1051,14 +1051,6 @@
 
             this.el.innerHTML = html;
 
-            if (opts.bound) {
-                if(opts.field.type !== 'hidden') {
-                    sto(function() {
-                        opts.trigger.focus();
-                    }, 1);
-                }
-            }
-
             if (typeof this._o.onDraw === 'function') {
                 this._o.onDraw(this);
             }
